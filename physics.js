@@ -1,11 +1,23 @@
 function setup(){
-  createCanvas(1280, 720);
+  createCanvas(window.innerWidth, window.innerHeight);
   background(51);
-  block = new object();
+  ball = new object();
   frameRate(60);
+  ball.run = true;
 }
 function draw(){
   background(51);
-  block.update();
-  block.show();
+  ball.update();
+  ball.show();
+
+}
+function mouseDragged(){
+  ball.run = false;
+  this.xvel = accelerationX;
+  this.yvel = accelerationY;
+  ball.x = mouseX;
+  ball.y = mouseY;
+}
+function mouseReleased(){
+  ball.run = true;
 }
