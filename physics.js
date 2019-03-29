@@ -1,5 +1,6 @@
-var enterfull;
-var closefull;
+let enterfull;
+let closefull;
+
 function preload(){
   enterfull = loadImage('enter.png');
   closefull = loadimage('exit.png');
@@ -18,16 +19,15 @@ function draw(){
   ball.update();
   ball.show();
   var full = fullscreen();
-  var notfull = !fullscreen();
-  if (!notfull) {
-    image(closefull, windowWidth - round(windowHeight * windowWidth / 65280), 0, round(windowHeight * windowWidth / 65280), round(windowHeight * windowWidth / 65280));
+  if (full) {
+    image(closefull, windowWidth - round(windowHeight * windowWidth / 20000), 0, round(windowHeight * windowWidth / 20000), round(windowHeight * windowWidth / 20000));
   }
   if (!full) {
-    image(enterfull, windowWidth - round(windowHeight * windowWidth / 65280), 0, round(windowHeight * windowWidth / 65280), round(windowHeight * windowWidth / 65280));
+      image(enterfull, windowWidth - round(windowHeight * windowWidth / 20000), 0, round(windowHeight * windowWidth / 20000), round(windowHeight * windowWidth / 20000));
   }
 }
 function mouseClicked(){
-  if (mouseX >= windowWidth - round(windowHeight * windowWidth / 65280) && mouseX <= windowWidth && mouseY >= 0 && mouseY <= round(windowHeight * windowWidth / 65280)){
+  if (mouseX >= windowWidth - round(windowHeight * windowWidth / 20000) && mouseX <= windowWidth && mouseY >= 0 && mouseY <= round(windowHeight * windowWidth / 20000)){
     fullscreen(!fullscreen());
   }
 }
