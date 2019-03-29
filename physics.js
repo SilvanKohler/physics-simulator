@@ -1,4 +1,5 @@
 function setup(){
+  fullscreen(true);
   createCanvas(window.innerWidth, window.innerHeight);
   background(51);
   ball = new object();
