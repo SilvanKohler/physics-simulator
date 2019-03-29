@@ -1,10 +1,10 @@
-let enterfull;
-let closefull;
+//let enterfull;
+//let closefull;
 
-function preload(){
-  enterfull = loadImage('enter.png');
-  closefull = loadimage('exit.png');
-}
+//function preload(){
+//  enterfull = loadImage('enter.png');
+//  closefull = loadimage('exit.png');
+//}
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -18,18 +18,17 @@ function draw(){
   background(51);
   ball.update();
   ball.show();
-  var full = fullscreen();
-  if (full) {
-    image(closefull, windowWidth - round(windowHeight * windowWidth / 20000), 0, round(windowHeight * windowWidth / 20000), round(windowHeight * windowWidth / 20000));
-  }
-  if (!full) {
-      image(enterfull, windowWidth - round(windowHeight * windowWidth / 20000), 0, round(windowHeight * windowWidth / 20000), round(windowHeight * windowWidth / 20000));
-  }
+  //if (fullscreen()) {
+  //  image(closefull, windowWidth - round(windowHeight * windowWidth / 20000), 0, round(windowHeight * windowWidth / 20000), round(windowHeight * windowWidth / 20000));
+  //}
+  //if (!fullscreen()) {
+  //    image(enterfull, windowWidth - round(windowHeight * windowWidth / 20000), 0, round(windowHeight * windowWidth / 20000), round(windowHeight * windowWidth / 20000));
+  //}
 }
 function mouseClicked(){
-  if (mouseX >= windowWidth - round(windowHeight * windowWidth / 20000) && mouseX <= windowWidth && mouseY >= 0 && mouseY <= round(windowHeight * windowWidth / 20000)){
-    fullscreen(!fullscreen());
-  }
+  //if (mouseX >= windowWidth - round(windowHeight * windowWidth / 20000) && mouseX <= windowWidth && mouseY >= 0 && mouseY <= round(windowHeight * windowWidth / 20000)){
+  //  fullscreen(!fullscreen());
+  //}
 }
 function mouseDragged(){
   ball.run = false;
