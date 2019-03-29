@@ -20,3 +20,7 @@ function mouseDragged(){
 function mouseReleased(){
   ball.run = true;
 }
+function windowResized() {
+  ball.yvel = -1;
+  resizeCanvas(window.innerWidth, window.innerHeight);
+}
