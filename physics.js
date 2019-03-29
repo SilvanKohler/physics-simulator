@@ -1,7 +1,7 @@
 function setup(){
-  fullscreen(true);
   createCanvas(window.innerWidth, window.innerHeight);
   background(51);
+  fullscreen(true);
   ball = new object();
   frameRate(60);
   ball.run = true;
