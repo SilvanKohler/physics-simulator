@@ -1,3 +1,4 @@
 # physics-simulator
-run code: https://silvankohler.github.io/physics-simulator/
-[![HitCount](http://hits.dwyl.io/SilvanKohler/physics-simulator.svg)](http://hits.dwyl.io/SilvanKohler/physics-simulator)
+## Play on this website with a ball and "real" ball-physics.
+<a href="https://silvankohler.github.io/physics-simulator/" class="idk-bar-item idk-button">Run code</a>
+<a href="https://github.com/SilvanKohler/physics-simulator/archive/master.zip" class="idk-bar-item idk-button">Click to Download</a>
